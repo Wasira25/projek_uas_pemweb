@@ -1,28 +1,13 @@
-<?php
-// WAJIB: aktifkan semua error
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-// Konfigurasi database
+c:\Users\Wasira25\Downloads\backend_UAS_pemweb\backend_UAS\list.php c:\Users\Wasira25\Downloads\backend_UAS_pemweb\backend_UAS\config.php c:\Users\Wasira25\Downloads\backend_UAS_pemweb\backend_UAS\create.php c:\Users\Wasira25\Downloads\backend_UAS_pemweb\backend_UAS\delete.php c:\Users\Wasira25\Downloads\backend_UAS_pemweb\backend_UAS\form_create.php c:\Users\Wasira25\Downloads\backend_UAS_pemweb\backend_UAS\form_edit.php c:\Users\Wasira25\Downloads\backend_UAS_pemweb\backend_UAS\index.php c:\Use<?php
 $host = "localhost";
 $user = "root";
 $pass = "";
-<<<<<<< HEAD
 $db   = "db_jasa";
 
 $conn = mysqli_connect($host, $user, $pass, $db);
+
 if (!$conn) {
     die("Koneksi gagal: " . mysqli_connect_error());
-=======
-$db   = "kampus_db"; // Pastikan database ini ADA
-
-// Coba koneksi
-$coon = mysqli_connect($host, $user, $pass, $db);
-
-// Cek koneksi
-if (!$coon) {
-  // Paksa tampilkan error dan berhenti
-  die("Koneksi gagal: " . mysqli_connect_error());
->>>>>>> 853987a058ee6cca15d4f6926483ad68d0477d55
 }
 ?>
+rs\Wasira25\Downloads\backend_UAS_pemweb\backend_UAS\update.php

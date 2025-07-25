@@ -1,24 +1,16 @@
 <?php
-// Header CORS
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
-header("Access-Control-Allow-Headers: Content-Type, Authorization");
-header("Content-Type: application/json");
-
-// Tangani preflight request dari browser (OPTIONS)
-if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
-    http_response_code(200);
-    exit();
-}
-
 include 'config.php';
+header('Content-Type: application/json');
 
-$result = mysqli_query($coon, "SELECT * FROM artikel ORDER BY id DESC");
+$result = mysqli_query($conn, "SELECT * FROM outsourcing");
 $data = [];
 
 while ($row = mysqli_fetch_assoc($result)) {
-  $data[] = $row;
+    $data[] = $row;
 }
 
-echo json_encode($data);
+echo json_encode([
+    "status" => "success",
+    "data" => $data
+]);
 ?>
